@@ -1,0 +1,6 @@
+# Core pipeline uses Python 3.9+ standard library exclusively (urllib, json, re, xml).
+# Zero external packages are strictly required to run scripts/build_all.py.
+
+# Optional development & linting tools:
+flake8>=6.0.0
+pytest>=8.0.0

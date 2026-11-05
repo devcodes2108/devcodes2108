@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 260" width="860" height="260">
+  <defs>
+    <style>
+      :root {
+        --bg-panel: #0d1117;
+        --border-panel: #30363d;
+        --border-focus: #00f2fe;
+        --text-primary: #e6edf3;
+        --text-secondary: #8b949e;
+        --text-muted: #6e7681;
+        --card-inner: #161b22;
+        --badge-bg: rgba(0, 242, 254, 0.08);
+        --accent-cyan: #00f2fe;
+        --accent-green: #10b981;
+        --accent-amber: #f59e0b;
+      }
+
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg-panel: #ffffff;
+          --border-panel: #d0d7de;
+          --border-focus: #0969da;
+          --text-primary: #1f2328;
+          --text-secondary: #656d76;
+          --text-muted: #8c959f;
+          --card-inner: #f6f8fa;
+          --badge-bg: rgba(9, 105, 218, 0.08);
+          --accent-cyan: #0969da;
+          --accent-green: #1a7f37;
+          --accent-amber: #9a6700;
+        }
+      }
+
+      .hud-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      }
+      .mono-text {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      }
+
+      @keyframes cardSlide {
+        0% {
+          opacity: 0;
+          transform: translateY(12px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .card-item {
+        animation: cardSlide 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .card-item {
+          animation: none !important;
+          opacity: 1 !important;
+        }
+      }
+    </style>
+  </defs>
+
+  <!-- 2x2 Grid Layout: Card size 420 x 120 -->
+  <g class="card-item" transform="translate(0, 0)" style="animation-delay: 0.05s;">
+    <!-- Outer Card Frame -->
+    <rect x="0" y="0" width="420" height="125" rx="10" fill="var(--card-inner)" stroke="var(--border-panel)" stroke-width="1.2" />
+
+    <!-- Corner Indicator -->
+    <line x1="0" y1="16" x2="0" y2="36" stroke="#00f2fe" stroke-width="3" />
+
+    <!-- Icon Pod -->
+    <g transform="translate(14, 12)">
+      <rect x="0" y="0" width="28" height="28" rx="6" fill="var(--bg-panel)" stroke="var(--border-panel)" stroke-width="1" />
+      <path d="M14 6 L22 10 C22 18 14 24 14 26 C14 24 6 18 6 10 Z" fill="none" stroke="#00f2fe" stroke-width="1.8" stroke-linejoin="round" />
+            <circle cx="14" cy="15" r="2.5" fill="#00f2fe" />
+    </g>
+
+    <!-- Project Name & Tag -->
+    <text x="52" y="24" fill="var(--text-primary)" font-size="14.5" font-weight="700" class="hud-text">LockItPDF</text>
+    <text x="52" y="37" fill="#00f2fe" font-size="9" font-weight="600" class="mono-text" letter-spacing="0.75">CRYPTOGRAPHY // SEC-OPS</text>
+
+    <!-- Status Badge -->
+    <g transform="translate(320, 14)">
+      <rect x="0" y="0" width="86" height="18" rx="4" fill="var(--bg-panel)" stroke="var(--border-panel)" stroke-width="0.75" />
+      <text x="43" y="12" text-anchor="middle" fill="var(--text-secondary)" font-size="8.5" font-weight="600" class="mono-text">CONTAINERIZED</text>
+    </g>
+
+    <!-- Description -->
+    <text x="14" y="60" fill="var(--text-secondary)" font-size="11" class="hud-text">
+      <tspan x="14" dy="0">Full-stack Dockerized PDF encryption engine with granular </tspan>
+      <tspan x="14" dy="16">access control &amp; password shielding.</tspan>
+    </text>
+
+    <!-- Tech Stack Badges -->
+    <g transform="translate(14, 98)">
+      <rect x="0" y="0" width="53.0" height="18" rx="4" fill="var(--badge-bg)" stroke="var(--border-panel)" stroke-width="0.75" />
+      <text x="26.5" y="12" text-anchor="middle" fill="var(--text-primary)" font-size="9" font-weight="500" class="mono-text">Python</text>
+      <rect x="59.0" y="0" width="53.0" height="18" rx="4" fill="var(--badge-bg)" stroke="var(--border-panel)" stroke-width="0.75" />
+      <text x="85.5" y="12" text-anchor="middle" fill="var(--text-primary)" font-size="9" font-weight="500" class="mono-text">Docker</text>
+      <rect x="118.0" y="0" width="53.0" height="18" rx="4" fill="var(--badge-bg)" stroke="var(--border-panel)" stroke-width="0.75" />
+      <text x="144.5" y="12" text-anchor="middle" fill="var(--text-primary)" font-size="9" font-weight="500" class="mono-text">JS/CSS</text>
+      <rect x="177.0" y="0" width="66.0" height="18" rx="4" fill="var(--badge-bg)" stroke="var(--border-panel)" stroke-width="0.75" />
+      <text x="210.0" y="12" text-anchor="middle" fill="var(--text-primary)" font-size="9" font-weight="500" class="mono-text">Security</text>
+    </g>
+  </g>
+  <g class="card-item" transform="translate(440, 0)" style="animation-delay: 0.15s;">
+    <!-- Outer Card Frame -->
+    <rect x="0" y="0" width="420" height="125" rx="10" fill="var(--card-inner)" stroke="var(--border-panel)" stroke-width="1.2" />
+
+    <!-- Corner Indicator -->
+    <line x1="0" y1="16" x2="0" y2="36" stroke="#10b981" stroke-width="3" />
+
+    <!-- Icon Pod -->
+    <g transform="translate(14, 12)">
+      <rect x="0" y="0" width="28" height="28" rx="6" fill="var(--bg-panel)" stroke="var(--border-panel)" stroke-width="1" />
+      <rect x="7" y="11" width="14" height="12" rx="2" fill="none" stroke="#10b981" stroke-width="1.8" />
+            <path d="M10 11 V7 A4 4 0 0 1 18 7 V11" fill="none" stroke="#10b981" stroke-width="1.8" />
+            <circle cx="14" cy="17" r="1.5" fill="#10b981" />
+    </g>
+
+    <!-- Project Name & Tag -->
+    <text x="52" y="24" fill="var(--text-primary)" font-size="14.5" font-weight="700" class="hud-text">SecurePDF-BatchEncryptor</text>
+    <text x="52" y="37" fill="#10b981" font-size="9" font-weight="600" class="mono-text" letter-spacing="0.75">SECURITY PIPELINE</text>
+
+    <!-- Status Badge -->
+    <g transform="translate(320, 14)">
+      <rect x="0" y="0" width="86" height="18" rx="4" fill="var(--bg-panel)" stroke="var(--border-panel)" stroke-width="0.75" />
+      <text x="43" y="12" text-anchor="middle" fill="var(--text-secondary)" font-size="8.5" font-weight="600" class="mono-text">PIPELINE</text>
+    </g>
+
+    <!-- Description -->
+    <text x="14" y="60" fill="var(--text-secondary)" font-size="11" class="hud-text">
+      <tspan x="14" dy="0">High-throughput batch cryptographic encryption pipeline fo</tspan>
+      <tspan x="14" dy="16">r automated document safeguarding.</tspan>
+    </text>
+
+    <!-- Tech Stack Badges -->
+    <g transform="translate(14, 98)">
+      <rect x="0" y="0" width="53.0" height="18" rx="4" fill="var(--badge-bg)" stroke="var(--border-panel)" stroke-width="0.75" />
+      <text x="26.5" y="12" text-anchor="middle" fill="var(--text-primary)" font-size="9" font-weight="500" class="mono-text">Python</text>
+      <rect x="59.0" y="0" width="59.5" height="18" rx="4" fill="var(--badge-bg)" stroke="var(--border-panel)" stroke-width="0.75" />
+      <text x="88.8" y="12" text-anchor="middle" fill="var(--text-primary)" font-size="9" font-weight="500" class="mono-text">Jupyter</text>
+      <rect x="124.5" y="0" width="92.0" height="18" rx="4" fill="var(--badge-bg)" stroke="var(--border-panel)" stroke-width="0.75" />
+      <text x="170.5" y="12" text-anchor="middle" fill="var(--text-primary)" font-size="9" font-weight="500" class="mono-text">Cryptography</text>
+      <rect x="222.5" y="0" width="46.5" height="18" rx="4" fill="var(--badge-bg)" stroke="var(--border-panel)" stroke-width="0.75" />
+      <text x="245.8" y="12" text-anchor="middle" fill="var(--text-primary)" font-size="9" font-weight="500" class="mono-text">Batch</text>
+    </g>
+  </g>
+  <g class="card-item" transform="translate(0, 135)" style="animation-delay: 0.25s;">
+    <!-- Outer Card Frame -->
+    <rect x="0" y="0" width="420" height="125" rx="10" fill="var(--card-inner)" stroke="var(--border-panel)" stroke-width="1.2" />
+
+    <!-- Corner Indicator -->
+    <line x1="0" y1="16" x2="0" y2="36" stroke="#38bdf8" stroke-width="3" />
+
+    <!-- Icon Pod -->
+    <g transform="translate(14, 12)">
+      <rect x="0" y="0" width="28" height="28" rx="6" fill="var(--bg-panel)" stroke="var(--border-panel)" stroke-width="1" />
+      <circle cx="14" cy="14" r="9" fill="none" stroke="#38bdf8" stroke-width="1.8" />
+            <ellipse cx="14" cy="14" rx="4.5" ry="9" fill="none" stroke="#38bdf8" stroke-width="1.5" />
+            <line x1="5" y1="14" x2="23" y2="14" stroke="#38bdf8" stroke-width="1.5" />
+    </g>
+
+    <!-- Project Name & Tag -->
+    <text x="52" y="24" fill="var(--text-primary)" font-size="14.5" font-weight="700" class="hud-text">devanshu-portfolio</text>
+    <text x="52" y="37" fill="#38bdf8" font-size="9" font-weight="600" class="mono-text" letter-spacing="0.75">FULL-STACK PRODUCTION</text>
+
+    <!-- Status Badge -->
+    <g transform="translate(320, 14)">
+      <rect x="0" y="0" width="86" height="18" rx="4" fill="var(--bg-panel)" stroke="var(--border-panel)" stroke-width="0.75" />
+      <text x="43" y="12" text-anchor="middle" fill="var(--text-secondary)" font-size="8.5" font-weight="600" class="mono-text">DEPLOYED</text>
+    </g>
+
+    <!-- Description -->
+    <text x="14" y="60" fill="var(--text-secondary)" font-size="11" class="hud-text">
+      <tspan x="14" dy="0">Type-safe modern developer showcase highlighting engineeri</tspan>
+      <tspan x="14" dy="16">ng projects, speaking, and articles.</tspan>
+    </text>
+
+    <!-- Tech Stack Badges -->
+    <g transform="translate(14, 98)">
+      <rect x="0" y="0" width="79.0" height="18" rx="4" fill="var(--badge-bg)" stroke="var(--border-panel)" stroke-width="0.75" />
+      <text x="39.5" y="12" text-anchor="middle" fill="var(--text-primary)" font-size="9" font-weight="500" class="mono-text">TypeScript</text>
+      <rect x="85.0" y="0" width="46.5" height="18" rx="4" fill="var(--badge-bg)" stroke="var(--border-panel)" stroke-width="0.75" />
+      <text x="108.2" y="12" text-anchor="middle" fill="var(--text-primary)" font-size="9" font-weight="500" class="mono-text">React</text>
+      <rect x="137.5" y="0" width="85.5" height="18" rx="4" fill="var(--badge-bg)" stroke="var(--border-panel)" stroke-width="0.75" />
+      <text x="180.2" y="12" text-anchor="middle" fill="var(--text-primary)" font-size="9" font-weight="500" class="mono-text">TailwindCSS</text>
+      <rect x="229.0" y="0" width="79.0" height="18" rx="4" fill="var(--badge-bg)" stroke="var(--border-panel)" stroke-width="0.75" />
+      <text x="268.5" y="12" text-anchor="middle" fill="var(--text-primary)" font-size="9" font-weight="500" class="mono-text">Responsive</text>
+    </g>
+  </g>
+  <g class="card-item" transform="translate(440, 135)" style="animation-delay: 0.35s;">
+    <!-- Outer Card Frame -->
+    <rect x="0" y="0" width="420" height="125" rx="10" fill="var(--card-inner)" stroke="var(--border-panel)" stroke-width="1.2" />
+
+    <!-- Corner Indicator -->
+    <line x1="0" y1="16" x2="0" y2="36" stroke="#f59e0b" stroke-width="3" />
+
+    <!-- Icon Pod -->
+    <g transform="translate(14, 12)">
+      <rect x="0" y="0" width="28" height="28" rx="6" fill="var(--bg-panel)" stroke="var(--border-panel)" stroke-width="1" />
+      <rect x="5" y="6" width="18" height="16" rx="3" fill="none" stroke="#f59e0b" stroke-width="1.8" />
+            <path d="M9 11 L12 14 L9 17" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round" />
+            <line x1="14" y1="17" x2="18" y2="17" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round" />
+    </g>
+
+    <!-- Project Name & Tag -->
+    <text x="52" y="24" fill="var(--text-primary)" font-size="14.5" font-weight="700" class="hud-text">quick-push</text>
+    <text x="52" y="37" fill="#f59e0b" font-size="9" font-weight="600" class="mono-text" letter-spacing="0.75">DEVELOPER ACCELERATOR</text>
+
+    <!-- Status Badge -->
+    <g transform="translate(320, 14)">
+      <rect x="0" y="0" width="86" height="18" rx="4" fill="var(--bg-panel)" stroke="var(--border-panel)" stroke-width="0.75" />
+      <text x="43" y="12" text-anchor="middle" fill="var(--text-secondary)" font-size="8.5" font-weight="600" class="mono-text">TOOLING</text>
+    </g>
+
+    <!-- Description -->
+    <text x="14" y="60" fill="var(--text-secondary)" font-size="11" class="hud-text">
+      <tspan x="14" dy="0">Streamlined developer automation engine for accelerated Gi</tspan>
+      <tspan x="14" dy="16">t commits, staging, and sync workflows.</tspan>
+    </text>
+
+    <!-- Tech Stack Badges -->
+    <g transform="translate(14, 98)">
+      <rect x="0" y="0" width="79.0" height="18" rx="4" fill="var(--badge-bg)" stroke="var(--border-panel)" stroke-width="0.75" />
+      <text x="39.5" y="12" text-anchor="middle" fill="var(--text-primary)" font-size="9" font-weight="500" class="mono-text">TypeScript</text>
+      <rect x="85.0" y="0" width="59.5" height="18" rx="4" fill="var(--badge-bg)" stroke="var(--border-panel)" stroke-width="0.75" />
+      <text x="114.8" y="12" text-anchor="middle" fill="var(--text-primary)" font-size="9" font-weight="500" class="mono-text">Git Ops</text>
+      <rect x="150.5" y="0" width="79.0" height="18" rx="4" fill="var(--badge-bg)" stroke="var(--border-panel)" stroke-width="0.75" />
+      <text x="190.0" y="12" text-anchor="middle" fill="var(--text-primary)" font-size="9" font-weight="500" class="mono-text">Automation</text>
+      <rect x="235.5" y="0" width="33.5" height="18" rx="4" fill="var(--badge-bg)" stroke="var(--border-panel)" stroke-width="0.75" />
+      <text x="252.2" y="12" text-anchor="middle" fill="var(--text-primary)" font-size="9" font-weight="500" class="mono-text">CLI</text>
+    </g>
+  </g>
+</svg>

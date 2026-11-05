@@ -1,0 +1,246 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 280" width="860" height="280">
+  <defs>
+    <style>
+      /* Base Theme (Dark by default on GitHub dark mode) */
+      :root {
+        --bg-panel: #0d1117;
+        --border-panel: #30363d;
+        --border-focus: #00f2fe;
+        --text-primary: #e6edf3;
+        --text-secondary: #8b949e;
+        --text-muted: #6e7681;
+        --accent-cyan: #00f2fe;
+        --accent-teal: #4facfe;
+        --accent-green: #10b981;
+        --accent-amber: #f59e0b;
+        --badge-bg: rgba(0, 242, 254, 0.08);
+        --card-inner: #161b22;
+        --grid-line: rgba(48, 54, 61, 0.4);
+      }
+
+      /* Light Theme override */
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg-panel: #ffffff;
+          --border-panel: #d0d7de;
+          --border-focus: #0969da;
+          --text-primary: #1f2328;
+          --text-secondary: #656d76;
+          --text-muted: #8c959f;
+          --accent-cyan: #0969da;
+          --accent-teal: #0550ae;
+          --accent-green: #1a7f37;
+          --accent-amber: #9a6700;
+          --badge-bg: rgba(9, 105, 218, 0.08);
+          --card-inner: #f6f8fa;
+          --grid-line: rgba(208, 215, 222, 0.5);
+        }
+      }
+
+      .hud-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      }
+      .mono-text {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      }
+
+      /* Scanline and glowing animations */
+      @keyframes pulseStatus {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.4; transform: scale(0.92); }
+      }
+
+      @keyframes radarSweep {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
+      @keyframes scanlineAnim {
+        0% { transform: translateY(0); opacity: 0.15; }
+        50% { opacity: 0.35; }
+        100% { transform: translateY(270px); opacity: 0.15; }
+      }
+
+      @keyframes barGrow {
+        0% { width: 0; }
+      }
+
+      .status-pulse {
+        transform-origin: 792px 35px;
+        animation: pulseStatus 2.4s ease-in-out infinite;
+      }
+
+      .radar-arm {
+        transform-origin: 52px 52px;
+        animation: radarSweep 6s linear infinite;
+      }
+
+      .scan-line {
+        animation: scanlineAnim 4s ease-in-out infinite alternate;
+      }
+
+      /* Reduced motion support */
+      @media (prefers-reduced-motion: reduce) {
+        .status-pulse, .radar-arm, .scan-line {
+          animation: none !important;
+        }
+      }
+    </style>
+
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.05" />
+    </linearGradient>
+
+    <linearGradient id="radarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Clip path for panel frame -->
+    <clipPath id="panelClip">
+      <rect x="0" y="0" width="860" height="280" rx="14" ry="14" />
+    </clipPath>
+  </defs>
+
+  <!-- Outer Terminal HUD Frame -->
+  <g clip-path="url(#panelClip)">
+    <rect x="0" y="0" width="860" height="280" fill="var(--bg-panel)" rx="14" stroke="var(--border-panel)" stroke-width="1.5" />
+
+    <!-- Subtle Background Circuit / Grid Pattern -->
+    <path d="M0 45 L860 45 M0 175 L860 175 M540 45 L540 175 M280 175 L280 280 M570 175 L570 280" stroke="var(--grid-line)" stroke-width="1" stroke-dasharray="3 3" />
+
+    <!-- Moving Scanner Line across the HUD -->
+    <line x1="10" y1="0" x2="850" y2="0" stroke="url(#cyanGrad)" stroke-width="1.5" opacity="0.25" class="scan-line" />
+
+    <!-- ==================== HEADER BAR ==================== -->
+    <!-- Top HUD Coordinates and Breadcrumb -->
+    <text x="24" y="28" fill="var(--text-muted)" font-size="11" class="mono-text" letter-spacing="1.5">SEC-OPS // SYSTEM TELEMETRY HUD // v2.6</text>
+    
+    <!-- Online Heartbeat Status -->
+    <g transform="translate(685, 18)">
+      <rect x="0" y="0" width="150" height="24" rx="12" fill="var(--badge-bg)" stroke="var(--border-focus)" stroke-width="0.75" />
+      <circle cx="15" cy="12" r="4.5" fill="var(--accent-green)" class="status-pulse" />
+      <text x="28" y="15.5" fill="var(--text-primary)" font-size="10.5" font-weight="600" class="mono-text" letter-spacing="0.5">STATUS: ACTIVE</text>
+    </g>
+
+    <!-- ==================== LEFT: IDENTITY & SPECIALIZATION ==================== -->
+    <!-- Stylized Cyber Shield / Radar Glyph -->
+    <g transform="translate(24, 60)">
+      <!-- Outer Hex/Radar boundary -->
+      <circle cx="45" cy="45" r="42" fill="url(#shieldGrad)" stroke="var(--border-panel)" stroke-width="1.5" />
+      <circle cx="45" cy="45" r="28" fill="none" stroke="var(--border-panel)" stroke-width="1" stroke-dasharray="2 4" />
+      
+      <!-- Rotating Radar Beam -->
+      <g class="radar-arm" style="transform-origin: 45px 45px;">
+        <line x1="45" y1="45" x2="45" y2="4" stroke="url(#radarGrad)" stroke-width="2" stroke-linecap="round" />
+        <polygon points="45,45 35,8 45,4" fill="url(#radarGrad)" opacity="0.4" />
+      </g>
+
+      <!-- Center Security Shield Icon -->
+      <path d="M45 28 L57 33 C57 44 45 54 45 57 C45 54 33 44 33 33 Z" fill="none" stroke="var(--accent-cyan)" stroke-width="2.2" stroke-linejoin="round" />
+      <circle cx="45" cy="41" r="3" fill="var(--accent-cyan)" />
+    </g>
+
+    <!-- Identity & Bio Metadata -->
+    <text x="130" y="80" fill="var(--text-primary)" font-size="22" font-weight="700" class="hud-text" letter-spacing="-0.3">Devanshu Singh</text>
+    <text x="310" y="80" fill="var(--accent-cyan)" font-size="13" class="mono-text">@devcodes2108</text>
+    
+    <text x="130" y="103" fill="var(--accent-green)" font-size="12.5" font-weight="600" class="mono-text" letter-spacing="0.5">CYBER SECURITY SPECIALIST // CSE '26</text>
+    <text x="130" y="123" fill="var(--text-secondary)" font-size="12" class="hud-text">Institute of Technical Education and Research (ITER) • Bhubaneswar, IN</text>
+    
+    <!-- Focus Badges -->
+    <g transform="translate(130, 137)">
+      <rect x="0" y="0" width="100" height="20" rx="4" fill="var(--badge-bg)" stroke="var(--border-panel)" stroke-width="1" />
+      <text x="8" y="13.5" fill="var(--text-primary)" font-size="10" font-weight="600" class="mono-text">🔐 Cryptography</text>
+
+      <rect x="108" y="0" width="105" height="20" rx="4" fill="var(--badge-bg)" stroke="var(--border-panel)" stroke-width="1" />
+      <text x="116" y="13.5" fill="var(--text-primary)" font-size="10" font-weight="600" class="mono-text">⚡ Full-Stack TS</text>
+
+      <rect x="221" y="0" width="95" height="20" rx="4" fill="var(--badge-bg)" stroke="var(--border-panel)" stroke-width="1" />
+      <text x="229" y="13.5" fill="var(--text-primary)" font-size="10" font-weight="600" class="mono-text">🐍 Python/OOP</text>
+
+      <rect x="324" y="0" width="70" height="20" rx="4" fill="var(--badge-bg)" stroke="var(--border-panel)" stroke-width="1" />
+      <text x="332" y="13.5" fill="var(--text-primary)" font-size="10" font-weight="600" class="mono-text">🐳 Docker</text>
+    </g>
+
+    <!-- ==================== RIGHT: TELEMETRY METRIC PODS ==================== -->
+    <!-- Metric 1: Total Contributions -->
+    <g transform="translate(560, 62)">
+      <rect x="0" y="0" width="135" height="48" rx="8" fill="var(--card-inner)" stroke="var(--border-panel)" stroke-width="1" />
+      <text x="14" y="20" fill="var(--text-muted)" font-size="9.5" font-weight="600" class="mono-text">ANNUAL COMMITS</text>
+      <text x="14" y="39" fill="var(--accent-cyan)" font-size="18" font-weight="700" class="mono-text">92</text>
+      <path d="M105 18 L112 14 L119 22 L125 15" fill="none" stroke="var(--accent-cyan)" stroke-width="1.5" stroke-linecap="round" />
+    </g>
+
+    <!-- Metric 2: Repositories -->
+    <g transform="translate(705, 62)">
+      <rect x="0" y="0" width="130" height="48" rx="8" fill="var(--card-inner)" stroke="var(--border-panel)" stroke-width="1" />
+      <text x="14" y="20" fill="var(--text-muted)" font-size="9.5" font-weight="600" class="mono-text">PUBLIC REPOS</text>
+      <text x="14" y="39" fill="var(--text-primary)" font-size="18" font-weight="700" class="mono-text">13</text>
+      <circle cx="112" cy="24" r="5" fill="none" stroke="var(--accent-green)" stroke-width="1.5" />
+    </g>
+
+    <!-- Metric 3: Active Days -->
+    <g transform="translate(560, 118)">
+      <rect x="0" y="0" width="135" height="46" rx="8" fill="var(--card-inner)" stroke="var(--border-panel)" stroke-width="1" />
+      <text x="14" y="18" fill="var(--text-muted)" font-size="9.5" font-weight="600" class="mono-text">ACTIVE SESSIONS</text>
+      <text x="14" y="37" fill="var(--text-primary)" font-size="17" font-weight="700" class="mono-text">24 days</text>
+    </g>
+
+    <!-- Metric 4: Max Streak -->
+    <g transform="translate(705, 118)">
+      <rect x="0" y="0" width="130" height="46" rx="8" fill="var(--card-inner)" stroke="var(--border-panel)" stroke-width="1" />
+      <text x="14" y="18" fill="var(--text-muted)" font-size="9.5" font-weight="600" class="mono-text">STREAK VELOCITY</text>
+      <text x="14" y="37" fill="var(--accent-amber)" font-size="17" font-weight="700" class="mono-text">4 d streak</text>
+    </g>
+
+    <!-- ==================== FOOTER: LANGUAGE DNA DISTRIBUTION ==================== -->
+    <text x="24" y="202" fill="var(--text-secondary)" font-size="11" font-weight="600" class="mono-text" letter-spacing="1">LANGUAGE DNA // CODE DISTRIBUTION (606 KB)</text>
+    
+    <!-- Multi-segment Language Progress Bar -->
+    <g transform="translate(24, 212)">
+      <!-- Background container -->
+      <rect x="0" y="0" width="812" height="10" rx="5" fill="var(--card-inner)" stroke="var(--border-panel)" stroke-width="0.75" />
+      
+      <!-- Segment clips -->
+      <g clip-path="url(#barClip)">
+        <rect x="0.0" y="0" width="332.4" height="10" fill="#3178c6" />
+        <rect x="332.4" y="0" width="173.4" height="10" fill="#e34c26" />
+        <rect x="505.8" y="0" width="114.8" height="10" fill="#DA5B0B" />
+        <rect x="620.6" y="0" width="108.8" height="10" fill="#3572A5" />
+        <rect x="729.4" y="0" width="65.4" height="10" fill="#563d7c" />
+      </g>
+    </g>
+
+    <clipPath id="barClip">
+      <rect x="0" y="0" width="812" height="10" rx="5" />
+    </clipPath>
+
+    <!-- Language Legend Below Bar -->
+    <g transform="translate(24, 246)">
+      <circle cx="5" cy="-4" r="4.5" fill="#3178c6" />
+      <text x="15" y="0" fill="var(--text-primary)" font-size="11" font-weight="600" class="hud-text">TypeScript</text>
+      <text x="91" y="0" fill="var(--text-muted)" font-size="10.5" class="mono-text">40.9%</text>
+      <circle cx="133" cy="-4" r="4.5" fill="#e34c26" />
+      <text x="143" y="0" fill="var(--text-primary)" font-size="11" font-weight="600" class="hud-text">HTML</text>
+      <text x="177" y="0" fill="var(--text-muted)" font-size="10.5" class="mono-text">21.4%</text>
+      <circle cx="219" cy="-4" r="4.5" fill="#DA5B0B" />
+      <text x="229" y="0" fill="var(--text-primary)" font-size="11" font-weight="600" class="hud-text">Jupyter Notebook</text>
+      <text x="347" y="0" fill="var(--text-muted)" font-size="10.5" class="mono-text">14.1%</text>
+      <circle cx="389" cy="-4" r="4.5" fill="#3572A5" />
+      <text x="399" y="0" fill="var(--text-primary)" font-size="11" font-weight="600" class="hud-text">Python</text>
+      <text x="447" y="0" fill="var(--text-muted)" font-size="10.5" class="mono-text">13.4%</text>
+      <circle cx="489" cy="-4" r="4.5" fill="#563d7c" />
+      <text x="499" y="0" fill="var(--text-primary)" font-size="11" font-weight="600" class="hud-text">CSS</text>
+      <text x="526" y="0" fill="var(--text-muted)" font-size="10.5" class="mono-text">8.1%</text>
+      <!-- Last Synced Telemetry Tag -->
+      <text x="812" y="0" text-anchor="end" fill="var(--text-muted)" font-size="10" class="mono-text">SYNCED: 2026-11-05 18:32 UTC</text>
+    </g>
+  </g>
+</svg>
