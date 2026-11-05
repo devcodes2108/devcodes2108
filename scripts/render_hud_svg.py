@@ -337,3 +337,4 @@ def build_hud_svg():
 
 if __name__ == "__main__":
     build_hud_svg()
+

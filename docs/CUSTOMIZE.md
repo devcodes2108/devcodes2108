@@ -90,3 +90,4 @@ The automated workflow lives in [`.github/workflows/update-profile.yml`](../.git
 * **Security & Bot Protection**:
   * Uses GitHub's built-in `GITHUB_TOKEN` with `permissions: contents: write`.
   * Commits changes using `[skip ci]` to prevent infinite recursive build loops.
+
