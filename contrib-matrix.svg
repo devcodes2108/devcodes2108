@@ -483,6 +483,7 @@
       <rect class="cell" x="770.0" y="90.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.699s;" />
       <rect class="cell" x="770.0" y="104.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.724s;" />
       <rect class="cell" x="770.0" y="118.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.749s;" />
+      <rect class="cell" x="770.0" y="132.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.774s;" />
     </g>
 
     <!-- Footer Bar: Summary & Legend -->
