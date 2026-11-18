@@ -1,8 +1,8 @@
 {
-  "fetched_at": "2026-11-17T16:10:10.313725+00:00",
+  "fetched_at": "2026-11-18T15:46:38.898158+00:00",
   "total_repos": 13,
   "language_totals": {
-    "Python": 114950,
+    "Python": 115069,
     "TypeScript": 248571,
     "CSS": 44527,
     "JavaScript": 11767,
@@ -12,6 +12,27 @@
     "Jupyter Notebook": 87820
   },
   "repos": [
+    {
+      "name": "hackerrank-python-solutions",
+      "full_name": "devcodes2108/hackerrank-python-solutions",
+      "html_url": "https://github.com/devcodes2108/hackerrank-python-solutions",
+      "description": null,
+      "primary_language": "Python",
+      "languages": {
+        "Python": 173
+      },
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "open_issues": 0,
+      "topics": [],
+      "created_at": "2026-11-01T09:50:55Z",
+      "updated_at": "2026-11-06T13:51:27Z",
+      "pushed_at": "2026-11-17T17:47:06Z",
+      "is_fork": false,
+      "size": 13,
+      "default_branch": "main"
+    },
     {
       "name": "devcodes2108",
       "full_name": "devcodes2108/devcodes2108",
@@ -28,30 +49,9 @@
       "topics": [],
       "created_at": "2026-08-31T21:49:08Z",
       "updated_at": "2026-11-12T16:23:57Z",
-      "pushed_at": "2026-11-16T15:58:21Z",
+      "pushed_at": "2026-11-17T16:10:15Z",
       "is_fork": false,
-      "size": 201,
-      "default_branch": "main"
-    },
-    {
-      "name": "hackerrank-python-solutions",
-      "full_name": "devcodes2108/hackerrank-python-solutions",
-      "html_url": "https://github.com/devcodes2108/hackerrank-python-solutions",
-      "description": null,
-      "primary_language": "Python",
-      "languages": {
-        "Python": 54
-      },
-      "stars": 0,
-      "forks": 0,
-      "watchers": 0,
-      "open_issues": 0,
-      "topics": [],
-      "created_at": "2026-11-01T09:50:55Z",
-      "updated_at": "2026-11-06T13:51:27Z",
-      "pushed_at": "2026-11-16T03:49:00Z",
-      "is_fork": false,
-      "size": 10,
+      "size": 212,
       "default_branch": "main"
     },
     {
