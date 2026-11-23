@@ -299,8 +299,8 @@
       <rect class="cell" x="406.0" y="62.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.337s;" />
       <rect class="cell" x="406.0" y="76.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.362s;" />
       <rect class="cell" x="406.0" y="90.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.387s;" />
-      <rect class="cell" x="406.0" y="104.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-2)" style="animation-delay: 0.412s;" />
-      <rect class="cell" x="406.0" y="118.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-2)" style="animation-delay: 0.437s;" />
+      <rect class="cell" x="406.0" y="104.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-3)" style="animation-delay: 0.412s;" />
+      <rect class="cell" x="406.0" y="118.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-3)" style="animation-delay: 0.437s;" />
       <rect class="cell" x="406.0" y="132.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.462s;" />
       <rect class="cell" x="420.0" y="48.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.324s;" />
       <rect class="cell" x="420.0" y="62.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.349s;" />
@@ -320,7 +320,7 @@
       <rect class="cell" x="448.0" y="62.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.373s;" />
       <rect class="cell" x="448.0" y="76.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.398s;" />
       <rect class="cell" x="448.0" y="90.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.423s;" />
-      <rect class="cell" x="448.0" y="104.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-2)" style="animation-delay: 0.448s;" />
+      <rect class="cell" x="448.0" y="104.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-4)" style="animation-delay: 0.448s;" />
       <rect class="cell" x="448.0" y="118.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.473s;" />
       <rect class="cell" x="448.0" y="132.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.498s;" />
       <rect class="cell" x="462.0" y="48.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.360s;" />
@@ -362,19 +362,19 @@
       <rect class="cell" x="532.0" y="62.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.445s;" />
       <rect class="cell" x="532.0" y="76.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.470s;" />
       <rect class="cell" x="532.0" y="90.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.495s;" />
-      <rect class="cell" x="532.0" y="104.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-2)" style="animation-delay: 0.520s;" />
+      <rect class="cell" x="532.0" y="104.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-3)" style="animation-delay: 0.520s;" />
       <rect class="cell" x="532.0" y="118.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.545s;" />
       <rect class="cell" x="532.0" y="132.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.570s;" />
       <rect class="cell" x="546.0" y="48.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.432s;" />
       <rect class="cell" x="546.0" y="62.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.457s;" />
       <rect class="cell" x="546.0" y="76.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.482s;" />
       <rect class="cell" x="546.0" y="90.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.507s;" />
-      <rect class="cell" x="546.0" y="104.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-1)" style="animation-delay: 0.532s;" />
-      <rect class="cell" x="546.0" y="118.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-1)" style="animation-delay: 0.557s;" />
+      <rect class="cell" x="546.0" y="104.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-2)" style="animation-delay: 0.532s;" />
+      <rect class="cell" x="546.0" y="118.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-2)" style="animation-delay: 0.557s;" />
       <rect class="cell" x="546.0" y="132.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.582s;" />
       <rect class="cell" x="560.0" y="48.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.444s;" />
       <rect class="cell" x="560.0" y="62.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-1)" style="animation-delay: 0.469s;" />
-      <rect class="cell" x="560.0" y="76.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-3)" style="animation-delay: 0.494s;" />
+      <rect class="cell" x="560.0" y="76.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-4)" style="animation-delay: 0.494s;" />
       <rect class="cell" x="560.0" y="90.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-1)" style="animation-delay: 0.519s;" />
       <rect class="cell" x="560.0" y="104.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-4)" style="animation-delay: 0.544s;" />
       <rect class="cell" x="560.0" y="118.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.569s;" />
@@ -383,13 +383,13 @@
       <rect class="cell" x="574.0" y="62.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.481s;" />
       <rect class="cell" x="574.0" y="76.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.506s;" />
       <rect class="cell" x="574.0" y="90.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.531s;" />
-      <rect class="cell" x="574.0" y="104.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-3)" style="animation-delay: 0.556s;" />
-      <rect class="cell" x="574.0" y="118.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-2)" style="animation-delay: 0.581s;" />
-      <rect class="cell" x="574.0" y="132.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-3)" style="animation-delay: 0.606s;" />
+      <rect class="cell" x="574.0" y="104.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-4)" style="animation-delay: 0.556s;" />
+      <rect class="cell" x="574.0" y="118.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-3)" style="animation-delay: 0.581s;" />
+      <rect class="cell" x="574.0" y="132.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-4)" style="animation-delay: 0.606s;" />
       <rect class="cell" x="588.0" y="48.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.468s;" />
       <rect class="cell" x="588.0" y="62.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.493s;" />
-      <rect class="cell" x="588.0" y="76.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-2)" style="animation-delay: 0.518s;" />
-      <rect class="cell" x="588.0" y="90.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-3)" style="animation-delay: 0.543s;" />
+      <rect class="cell" x="588.0" y="76.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-4)" style="animation-delay: 0.518s;" />
+      <rect class="cell" x="588.0" y="90.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-4)" style="animation-delay: 0.543s;" />
       <rect class="cell" x="588.0" y="104.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.568s;" />
       <rect class="cell" x="588.0" y="118.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.593s;" />
       <rect class="cell" x="588.0" y="132.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.618s;" />
@@ -458,10 +458,10 @@
       <rect class="cell" x="714.0" y="132.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.726s;" />
       <rect class="cell" x="728.0" y="48.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-4)" style="animation-delay: 0.588s;" />
       <rect class="cell" x="728.0" y="62.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.613s;" />
-      <rect class="cell" x="728.0" y="76.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-1)" style="animation-delay: 0.638s;" />
+      <rect class="cell" x="728.0" y="76.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-2)" style="animation-delay: 0.638s;" />
       <rect class="cell" x="728.0" y="90.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.663s;" />
-      <rect class="cell" x="728.0" y="104.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-1)" style="animation-delay: 0.688s;" />
-      <rect class="cell" x="728.0" y="118.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-3)" style="animation-delay: 0.713s;" />
+      <rect class="cell" x="728.0" y="104.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-2)" style="animation-delay: 0.688s;" />
+      <rect class="cell" x="728.0" y="118.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-4)" style="animation-delay: 0.713s;" />
       <rect class="cell" x="728.0" y="132.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.738s;" />
       <rect class="cell" x="742.0" y="48.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.600s;" />
       <rect class="cell" x="742.0" y="62.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.625s;" />
@@ -471,13 +471,14 @@
       <rect class="cell" x="742.0" y="118.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.725s;" />
       <rect class="cell" x="742.0" y="132.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.750s;" />
       <rect class="cell" x="756.0" y="48.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.612s;" />
-      <rect class="cell" x="756.0" y="62.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-2)" style="animation-delay: 0.637s;" />
-      <rect class="cell" x="756.0" y="76.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-2)" style="animation-delay: 0.662s;" />
+      <rect class="cell" x="756.0" y="62.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-3)" style="animation-delay: 0.637s;" />
+      <rect class="cell" x="756.0" y="76.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-3)" style="animation-delay: 0.662s;" />
       <rect class="cell" x="756.0" y="90.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.687s;" />
       <rect class="cell" x="756.0" y="104.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-1)" style="animation-delay: 0.712s;" />
       <rect class="cell" x="756.0" y="118.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.737s;" />
       <rect class="cell" x="756.0" y="132.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.762s;" />
       <rect class="cell" x="770.0" y="48.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.624s;" />
+      <rect class="cell" x="770.0" y="62.0" width="10.5" height="10.5" rx="2" fill="var(--lvl-0)" style="animation-delay: 0.649s;" />
     </g>
 
     <!-- Footer Bar: Summary & Legend -->
